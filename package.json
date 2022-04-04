@@ -1,0 +1,26 @@
+{
+  "name": "insure-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoegaze-86/insure-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shoegaze-86/insure-landing-page/issues"
+  },
+  "homepage": "https://github.com/shoegaze-86/insure-landing-page#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.49.11"
+  }
+}
+
