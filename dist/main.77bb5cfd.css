@@ -74,15 +74,26 @@ h6 {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1.5em;
+  position: relative;
 }
-
-nav {
-  display: block;
-  height: 37em;
+header .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+header .mobile-head {
+  padding: 1.25em 1.5em;
+}
+header .logo {
+  display: inline-block;
+  padding-top: 0.5em;
+}
+header .nav-menu-icon {
+  float: right;
+  cursor: pointer;
+}
+header nav {
+  display: none;
   width: 100%;
   position: absolute;
   background: hsl(270deg, 9%, 17%) url(/bg-pattern-mobile-nav.6952305e.svg) bottom no-repeat;
@@ -90,21 +101,24 @@ nav {
   background-size: 100%;
   padding: 3em 1.75em;
 }
-nav ul {
+header nav ul {
   text-align: center;
   font-size: 1.35rem;
   font-weight: 500;
   letter-spacing: 0.08em;
 }
-nav li {
+header nav li {
   margin-bottom: 2em;
   padding: 0.7em 0;
 }
-nav a, nav a:visited {
+header nav a, header nav a:visited {
   color: hsl(0deg, 0%, 98%);
 }
-nav .active {
+header nav .active {
   border: 0.07em solid hsl(0deg, 0%, 98%);
+}
+header .nav-open {
+  display: block;
 }
 
 .intro {
