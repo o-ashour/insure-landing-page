@@ -3,6 +3,17 @@
 
 body {
   font-family: 'Karla', sans-serif;
+  font-size: $base-text;
+  background: $neutral-3;
+}
+
+button {
+  font-family: 'Karla', sans-serif;
+  background: transparent;
+  color: $neutral-3;
+  border: 0.1em solid $neutral-3;
+  padding: 0.7em 2.1em;
+  letter-spacing: 0.1em;
 }
 
 h1,
@@ -13,3 +24,155 @@ h5,
 h6 {
   font-family: 'DM Serif Display', serif;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em;
+
+  nav {
+    display: none;
+  }
+}
+
+.intro {
+  .hero-img {
+    width: 100%;
+    height: 28em;
+    object-fit: cover;
+  }
+
+  .plans {
+    min-height: 30em;
+    position: relative;
+    background: $primary-1;
+    background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: $neutral-3;
+    padding: 5em 1.4em 4em 1.4em;
+    text-align: center;
+  }
+
+  .plans::after {
+    content: '';
+    background: url(../images/bg-pattern-intro-right-mobile.svg) no-repeat right 20.8em;
+    position: absolute;
+    width: 100%;
+    height: 42em;
+    top: 0;
+    right: 0;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: weight('regular');
+    line-height: 1;
+  }
+
+  p {
+    margin: 1.5em 0;
+    line-height: 1.7;
+  }
+}
+
+.pitch {
+  margin-top: 8em;
+  padding: 0 1.5em;
+
+  hr {
+    width: 41%;
+    border: 0.01em solid $neutral-2;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: weight('regular');
+    text-align: center;
+    margin-top: 0.6em;
+    margin-bottom: 1.3em;
+  }
+
+  h4, h2 {
+    color: $neutral-1;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    font-weight: weight('regular');
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+  }
+
+  .selling-point {
+    margin-top: 3.5em;
+    text-align: center;
+  }
+
+  p {
+    color: $neutral-2;
+    line-height: 1.6;
+  }
+
+  .how-we-work {
+    display: flex;
+    flex-direction: column;align-items: center;
+    background: $primary-1 url(../images/bg-pattern-how-we-work-mobile.svg) right -3em no-repeat;
+    color: $neutral-3;
+    min-height: 18em;
+    margin-top: 8em;
+    padding: 3.5em 2em;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    font-weight: weight('regular');
+    text-align: center;
+    line-height: 1;
+    margin-bottom: auto;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 12em;
+  padding: 1em 1.35em;
+
+  .social-links {
+    margin-top: 1.65em;
+    margin-bottom: 2.25em;
+
+    li {
+      padding: 0.1em 0.35em;
+      display: inline-block;
+    }
+  }
+
+  hr {
+    border: 0.01em solid hsla(276, 4%, 51%, 0.47);
+  }
+
+  .site-map {
+    font-size: 0.85rem;
+    margin-top: 2.5em;
+    letter-spacing: 0.09em;
+
+    h5 {
+      font-family: 'Karla', sans-serif;
+      font-weight: weight('regular');
+      color: $neutral-2;
+      margin: 1em 0;
+      margin: 2.5em 0;
+    }
+
+    a, a:visited {
+      color: $neutral-1;
+    }
+
+    li {
+      margin-bottom: 0.95em;
+    }
+  }
+}
+

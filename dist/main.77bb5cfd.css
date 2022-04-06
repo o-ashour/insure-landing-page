@@ -45,8 +45,23 @@ p {
   margin-top: 0;
 }
 
+a, a:visited {
+  text-decoration: none;
+}
+
 body {
   font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background: hsl(0deg, 0%, 98%);
+}
+
+button {
+  font-family: "Karla", sans-serif;
+  background: transparent;
+  color: hsl(0deg, 0%, 98%);
+  border: 0.1em solid hsl(0deg, 0%, 98%);
+  padding: 0.7em 2.1em;
+  letter-spacing: 0.1em;
 }
 
 h1,
@@ -56,6 +71,136 @@ h4,
 h5,
 h6 {
   font-family: "DM Serif Display", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em;
+}
+header nav {
+  display: none;
+}
+
+.intro .hero-img {
+  width: 100%;
+  height: 28em;
+  object-fit: cover;
+}
+.intro .plans {
+  min-height: 30em;
+  position: relative;
+  background: hsl(256deg, 26%, 20%);
+  background-image: url(/bg-pattern-intro-left-mobile.7e587940.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  color: hsl(0deg, 0%, 98%);
+  padding: 5em 1.4em 4em 1.4em;
+  text-align: center;
+}
+.intro .plans::after {
+  content: "";
+  background: url(/bg-pattern-intro-right-mobile.74cf170a.svg) no-repeat right 20.8em;
+  position: absolute;
+  width: 100%;
+  height: 42em;
+  top: 0;
+  right: 0;
+}
+.intro h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.intro p {
+  margin: 1.5em 0;
+  line-height: 1.7;
+}
+
+.pitch {
+  margin-top: 8em;
+  padding: 0 1.5em;
+}
+.pitch hr {
+  width: 41%;
+  border: 0.01em solid hsl(273deg, 4%, 51%);
+}
+.pitch h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.6em;
+  margin-bottom: 1.3em;
+}
+.pitch h4, .pitch h2 {
+  color: hsl(270deg, 9%, 17%);
+}
+.pitch h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+}
+.pitch .selling-point {
+  margin-top: 3.5em;
+  text-align: center;
+}
+.pitch p {
+  color: hsl(273deg, 4%, 51%);
+  line-height: 1.6;
+}
+.pitch .how-we-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(256deg, 26%, 20%) url(/bg-pattern-how-we-work-mobile.6d6df3aa.svg) right -3em no-repeat;
+  color: hsl(0deg, 0%, 98%);
+  min-height: 18em;
+  margin-top: 8em;
+  padding: 3.5em 2em;
+}
+.pitch h3 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 12em;
+  padding: 1em 1.35em;
+}
+footer .social-links {
+  margin-top: 1.65em;
+  margin-bottom: 2.25em;
+}
+footer .social-links li {
+  padding: 0.1em 0.35em;
+  display: inline-block;
+}
+footer hr {
+  border: 0.01em solid hsla(276deg, 4%, 51%, 0.47);
+}
+footer .site-map {
+  font-size: 0.85rem;
+  margin-top: 2.5em;
+  letter-spacing: 0.09em;
+}
+footer .site-map h5 {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: hsl(273deg, 4%, 51%);
+  margin: 1em 0;
+  margin: 2.5em 0;
+}
+footer .site-map a, footer .site-map a:visited {
+  color: hsl(270deg, 9%, 17%);
+}
+footer .site-map li {
+  margin-bottom: 0.95em;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
