@@ -124,10 +124,13 @@ header .nav-open {
 .intro {
   line-height: 0;
 }
-.intro .hero-img {
+.intro .hero-img-mobile {
   width: 100%;
   height: 28em;
   object-fit: cover;
+}
+.intro .hero-img-desktop {
+  display: none;
 }
 .intro .plans {
   min-height: 30em;
@@ -139,6 +142,10 @@ header .nav-open {
   color: hsl(0deg, 0%, 98%);
   padding: 5em 1.4em 4em 1.4em;
   text-align: center;
+}
+.intro hr {
+  display: none;
+  border: 0.01em solid hsl(0deg, 0%, 98%);
 }
 .intro h1 {
   font-size: 2.8rem;
@@ -243,6 +250,65 @@ footer .site-map a, footer .site-map a:visited {
 }
 footer .site-map li {
   margin-bottom: 0.95em;
+}
+
+@media (min-width: 900px) {
+  header {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .mobile-head {
+    padding: 0;
+  }
+  header .nav-menu-icon {
+    display: none;
+  }
+  header nav {
+    display: block;
+    width: auto;
+    position: static;
+    background: none;
+    padding: 0;
+  }
+  header nav ul {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+  header nav li {
+    margin-left: 1.75em;
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  header nav a, header nav a:visited {
+    color: hsl(273deg, 4%, 51%);
+  }
+
+  .intro .plans {
+    background-image: url(/bg-pattern-intro-right-desktop.4f0db032.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 19em;
+  }
+  .intro .plans::after {
+    background: url(/bg-pattern-intro-left-desktop.61d46a7f.svg) no-repeat left;
+    background-size: 10em;
+    top: 13em;
+  }
+  .intro .hero-img-mobile {
+    display: none;
+  }
+  .intro hr {
+    width: 25%;
+    display: block;
+  }
+  .intro h1 {
+    font-size: 3.4rem;
+  }
+  .intro .hero-img-desktop {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
