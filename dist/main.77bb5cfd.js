@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/bg-pattern-mobile-nav.svg":[["bg-pattern-mobile-nav.6952305e.svg","images/bg-pattern-mobile-nav.svg"],"images/bg-pattern-mobile-nav.svg"],"./../images/bg-pattern-intro-left-mobile.svg":[["bg-pattern-intro-left-mobile.7e587940.svg","images/bg-pattern-intro-left-mobile.svg"],"images/bg-pattern-intro-left-mobile.svg"],"./../images/bg-pattern-intro-right-mobile.svg":[["bg-pattern-intro-right-mobile.74cf170a.svg","images/bg-pattern-intro-right-mobile.svg"],"images/bg-pattern-intro-right-mobile.svg"],"./../images/bg-pattern-how-we-work-mobile.svg":[["bg-pattern-how-we-work-mobile.6d6df3aa.svg","images/bg-pattern-how-we-work-mobile.svg"],"images/bg-pattern-how-we-work-mobile.svg"],"./../images/bg-pattern-intro-right-desktop.svg":[["bg-pattern-intro-right-desktop.4f0db032.svg","images/bg-pattern-intro-right-desktop.svg"],"images/bg-pattern-intro-right-desktop.svg"],"./../images/bg-pattern-intro-left-desktop.svg":[["bg-pattern-intro-left-desktop.61d46a7f.svg","images/bg-pattern-intro-left-desktop.svg"],"images/bg-pattern-intro-left-desktop.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../images/bg-pattern-mobile-nav.svg":[["bg-pattern-mobile-nav.6952305e.svg","images/bg-pattern-mobile-nav.svg"],"images/bg-pattern-mobile-nav.svg"],"./../images/bg-pattern-intro-left-mobile.svg":[["bg-pattern-intro-left-mobile.7e587940.svg","images/bg-pattern-intro-left-mobile.svg"],"images/bg-pattern-intro-left-mobile.svg"],"./../images/bg-pattern-intro-right-mobile.svg":[["bg-pattern-intro-right-mobile.74cf170a.svg","images/bg-pattern-intro-right-mobile.svg"],"images/bg-pattern-intro-right-mobile.svg"],"./../images/bg-pattern-how-we-work-mobile.svg":[["bg-pattern-how-we-work-mobile.6d6df3aa.svg","images/bg-pattern-how-we-work-mobile.svg"],"images/bg-pattern-how-we-work-mobile.svg"],"./../images/bg-pattern-intro-left-desktop.svg":[["bg-pattern-intro-left-desktop.61d46a7f.svg","images/bg-pattern-intro-left-desktop.svg"],"images/bg-pattern-intro-left-desktop.svg"],"./../images/bg-pattern-intro-right-desktop.svg":[["bg-pattern-intro-right-desktop.4f0db032.svg","images/bg-pattern-intro-right-desktop.svg"],"images/bg-pattern-intro-right-desktop.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49526" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49393" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

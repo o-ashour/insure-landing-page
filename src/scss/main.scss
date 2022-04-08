@@ -27,10 +27,6 @@ h6 {
 }
 
 header {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // margin: 1.5em;
   position: relative;
 
   .clearfix::after {
@@ -40,34 +36,27 @@ header {
   }
 
   .mobile-head {
-    // display: flex;
-    // align-items: center ;
     padding: 1.25em 1.5em;
   }
 
   .logo {
     display: inline-block;
     padding-top: 0.5em;
-    // position: relative;
-    // top: 0.5em;
   }
+
   .nav-menu-icon {
-    // display: inline;
     float: right;
     cursor: pointer;
-    // background-color: blue;
   }
 
   nav {
     display: none;
-    // height: 37em;
     width: 100%;
     position: absolute;
     background: $neutral-1 url(../images/bg-pattern-mobile-nav.svg) bottom no-repeat;
     z-index: 1;
     background-size: 100%;
     padding: 3em 1.75em;
-    // transition: 0.7s;
   
     ul {
       text-align: center;
@@ -111,19 +100,25 @@ header {
   .plans {
     min-height: 30em;
     position: relative;
-    background: $primary-1;
-    background-image: url(../images/bg-pattern-intro-left-mobile.svg);
-    background-position: left top;
-    background-repeat: no-repeat;
+    background: $primary-1 url(../images/bg-pattern-intro-left-mobile.svg) left top no-repeat;
     color: $neutral-3;
     padding: 5em 1.4em 4em 1.4em;
     text-align: center;
   }
 
+  .plans::after {
+    content: '';
+    background: url(../images/bg-pattern-intro-right-mobile.svg) no-repeat right 20.8em;
+    position: absolute;
+    width: 100%;
+    height: 42em;
+    top: 0;
+    right: 0;
+  }
+
   hr {
     display: none;
     border: 0.01em solid $neutral-3;
-    // border-width: 1em;
   }
 
   h1 {
@@ -135,16 +130,6 @@ header {
   p {
     margin: 1.5em 0;
     line-height: 1.7;
-  }
-
-  .plans::after {
-    content: '';
-    background: url(../images/bg-pattern-intro-right-mobile.svg) no-repeat right 20.8em;
-    position: absolute;
-    width: 100%;
-    height: 42em;
-    top: 0;
-    right: 0;
   }
 }
 
@@ -250,12 +235,23 @@ footer {
 
 @media (min-width: 900px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
   header {
     position: static;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1.25em 8em;
 
     .mobile-head {
+      padding: 0;
+    }
+
+    .logo {
+      width: 5.75em;
       padding: 0;
     }
 
@@ -272,7 +268,7 @@ footer {
 
       ul {
         font-size: 0.8rem;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.1em;
       }
 
       li {
@@ -289,17 +285,28 @@ footer {
   }
 
   .intro {
+    background-color: $primary-1;
+    // background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    // background-position: right top;
+    // background-repeat: no-repeat;
+    // background-size: 19em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 35em;
+
     .plans {
-      background-image: url(../images/bg-pattern-intro-right-desktop.svg);
-      background-position: right top;
-      background-repeat: no-repeat;
-      background-size: 19em;
+      background: none;
+      text-align: left;
+      padding: 6em 2em 4em 8em;
+      width: 60%;
     }
 
     .plans::after {
       background: url(../images/bg-pattern-intro-left-desktop.svg) no-repeat left;
       background-size: 10em;
-      top: 13em;
+      top: 19em;      
+      left: -0.8em;
     }
 
     .hero-img-mobile {
@@ -307,17 +314,44 @@ footer {
     }
 
     hr {
-      width: 25%;
+      width: 7em;
       display: block;
+      float: left;
+      margin: 0;
     }
 
     h1 {
       font-size: 3.4rem;
+      padding-right: 6em;
+      margin-top: 0.8em;
     }
 
     .hero-img-desktop {
       display: block;
+      // position: absolute;
+      // width: 24em;
+      height: 100%;
+      width: 50%;
+      // top: 0;
+      // right: 0;
+      object-fit: cover;
+      object-position: center;
+      margin-top: 6em;
+      margin-right: 8em;
     }
+  }
+
+  .intro::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 35em;
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 19em;
+    // background: yellow;
+    z-index: 2;
   }
 }
 
